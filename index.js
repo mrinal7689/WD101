@@ -1,3 +1,5 @@
+// Uncomment the email validation function if needed
+/*
 function checkEmailValidity() {
     const emailInput = document.getElementById('emailInput');
     const email = emailInput.value;
@@ -9,6 +11,7 @@ function checkEmailValidity() {
         document.getElementById('emailValidationMessage').textContent = "Please enter a valid email address.";
     }
 }
+*/
 
 function formatDate(inputDate) {
     const [day, month, year] = inputDate.split('/');
