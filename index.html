@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: 'Roboto', Arial, sans-serif;
-            background-color: black;
+            background-color: #f0f0f0;
             margin: 0;
             padding: 0;
         }
@@ -45,7 +45,7 @@
         button {
             width: 100%;
             padding: 10px 15px;
-            background-color: cyan;
+            background-color: #007bff;
             color: #fff;
             border: none;
             border-radius: 3px;
@@ -53,7 +53,7 @@
             transition: background-color 0.3s ease;
         }
         button:hover {
-            background-color: purple;
+            background-color: #0056b3;
         }
         table {
             width: 100%;
@@ -66,12 +66,13 @@
             text-align: left;
         }
         th {
-            background-color: purple;
+            background-color: #007bff;
             color: #fff;
         }
         tbody tr:hover {
             background-color: #f5f5f5;
         }
+   
     </style>
     <script src="index.js"></script>
 </head>
@@ -110,10 +111,9 @@
                     <th>Agreed Terms</th>
                 </tr>
             </thead>
-            <tbody id="userTableBody"></tbody>
-             <div style="text-align: center; margin-top: 20px;">
-        <strong>Name, Email, Password, Dob, Accepted terms</strong>
-    </div>
+            <tbody id="userTableBody">
+                <!-- Table body will be empty on initial load -->
+            </tbody>
         </table>
     </div>
 </body>
