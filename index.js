@@ -1,3 +1,15 @@
+function checkEmailValidity() {
+    const emailInput = document.getElementById('emailInput');
+    const email = emailInput.value;
+    const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+    if (emailPattern.test(email)) {
+        document.getElementById('emailValidationMessage').textContent = "";
+    } else {
+        document.getElementById('emailValidationMessage').textContent = "Please enter a valid email address.";
+    }
+}
+
 function formatDate(inputDate) {
     const [day, month, year] = inputDate.split('/');
     const date = new Date(year, month - 1, day);
