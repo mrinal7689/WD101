@@ -54,6 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
     loadUserEntries();
 
     registrationForm.addEventListener("submit", function (e) {
+        registrationForm.addEventListener("submit", function (e) {
         e.preventDefault();
 
         const name = getValue("name");
@@ -81,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const userEntries = JSON.parse(localStorage.getItem("userEntries")) || [];
         clearTable();
 
-        userEntries.forEach(({ name, email, password, dateOfBirth, termsAccepted }) => {
+        userEntries.forEach(({ name, email, password, DOB, Accepted terms? }) => {
             const newRow = userTableBody.insertRow();
             newRow.innerHTML = `<td>${name}</td><td>${email}</td><td>${password}</td><td>${dateOfBirth}</td><td>${termsAccepted}</td>`;
         });
