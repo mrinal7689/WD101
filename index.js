@@ -64,10 +64,10 @@ document.addEventListener("DOMContentLoaded", function () {
         const dateOfBirth = getValue("dob");
 
         const newRow = userTableBody.insertRow();
-        newRow.innerHTML = `<td>${name}</td><td>${email}</td><td>${password}</td><td>${dateOfBirth}</td><td>${termsAccepted}</td>`;
+        newRow.innerHTML = `<td>${name}</td><td>${email}</td><td>${password}</td><td>${DOB}</td><td>${termsAccepted}</td>`;
         clearFormFields();
 
-        saveUserEntry(name, email, password, dateOfBirth, termsAccepted);
+        saveUserEntry(name, email, password,DOB, termsAccepted);
     });
 
     function getValue(id) {
@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         userEntries.forEach(({ name, email, password, DOB, Accepted terms? }) => {
             const newRow = userTableBody.insertRow();
-            newRow.innerHTML = `<td>${name}</td><td>${email}</td><td>${password}</td><td>${dateOfBirth}</td><td>${termsAccepted}</td>`;
+            newRow.innerHTML = `<td>${name}</td><td>${email}</td><td>${password}</td><td>${DOB}</td><td>${termsAccepted}</td>`;
         });
     }
 
